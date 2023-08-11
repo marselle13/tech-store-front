@@ -21,22 +21,30 @@
       <div class="flex justify-center bg-[#F5F7FF] py-5">
         <img :src="ad" alt="ad" />
       </div>
+      <ProductList image="bg-custom-builds" product="Custom builds" />
+      <ProductList :items="msiItems" image="bg-msi-laptops" product="MSI Laptops" />
+      <ProductList :items="desktopItems" image="bg-desktops" product="Desktops" />
+      <ProductList image="bg-monitors" product="Gaming Monitors" />
     </section>
   </main>
 </template>
 <script setup>
 import SliderImage from '@/assets/msi-slide.png'
 import SliderImage2 from '@/assets/msi-slide-2.png'
+import SellItem from '@/components/SellItem.vue'
+import ProductList from '@/components/ProductList.vue'
 import ad from '@/assets/ad.png'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Autoplay } from 'swiper/modules'
 import SwiperCore from 'swiper'
 
-SwiperCore.use([Navigation, Autoplay])
-
 import 'swiper/css'
 import 'swiper/css/navigation'
-import SellItem from '@/components/SellItem.vue'
+
+SwiperCore.use([Navigation, Autoplay])
+
+const msiItems = ['MSI GS Series', 'MSI GT Series', 'MSI GL Series', 'MSI GE Series']
+const desktopItems = ['MSI Infinute Series', 'MSI Triden', 'MSI GL Series', 'MSI Nightblade']
 </script>
 <style>
 .swiper-button-next,

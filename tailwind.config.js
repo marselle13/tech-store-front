@@ -13,6 +13,12 @@ module.exports = {
         'star-gold': '#E9A426',
         'light-gold': '#FFB800',
       },
+      backgroundImage: {
+        'custom-builds': "url('@/assets/products/custom.png')",
+        'msi-laptops': "url('@/assets/products/msi.png')",
+        desktops: "url('@/assets/products/desktops.png')",
+        monitors: "url('@/assets/products/monitors.png')",
+      },
     },
   },
   plugins: [],
