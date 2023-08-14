@@ -4,6 +4,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        '1xl': '1440px',
+      },
       colors: {
         'custom-blue': '#0156FF',
         'custom-green': '#78A962',

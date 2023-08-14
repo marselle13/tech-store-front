@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-4">
+  <div class="space-y-2">
     <div class="flex items-center gap-2">
       <StockIcon />
       <p class="text-xs text-custom-green">in stock</p>
